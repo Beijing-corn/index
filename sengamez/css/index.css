@@ -1,0 +1,84 @@
+*{
+    margin: 0 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.container-fluid{
+    padding: 0%;
+}
+.header_div{
+    background-image: url(../eechin.jpg);
+    min-height: 600px;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    height: 70px;
+    width:100%;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0,0,0.7);
+    color: white;
+    align-items: center;
+
+}
+.nav_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+.logo{
+    height: inherit;
+}
+.main_heading{
+    position: absolute;
+    top: 100px;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 4rem;
+    color: azure;
+    font-weight: 800;
+    text-shadow: 8px 8px 2px black;
+}
+
+.img{
+    width: 60%;
+    flex-direction: row-reverse;
+    padding: 4%;
+   text-align: center;
+   align-items: center;
+}
+.p{
+    font-size:larger;
+    color: aliceblue;
+}
+.c1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.c2{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-items: center;
+}
+.footer{
+    background-color: teal;
+    text-align: center;
+    font-weight: 1000;
+    padding: 20px;
+    color: whitesmoke;
+}
+@media screen and (max-width: 700px){
+    .games, .c1, .c2{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
